@@ -9,8 +9,10 @@ const Form = ({ onSub }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSub({ task });
-    setTask("");
+    if (task !== "") {
+      onSub({ task });
+      setTask("");
+    }
   };
 
   return (
