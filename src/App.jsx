@@ -25,7 +25,7 @@ class App extends Component {
   render() {
     return (
       <div className="head">
-        <h1>Todo List</h1>
+        <h1>Todo List..!</h1>
         <div className="todo-wrapper">
           <Form {...this.state} onSub={this.handleSubmit} />
 
